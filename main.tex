@@ -1,0 +1,21 @@
+\documentclass{article} 
+
+% importar paket, kommandon och annat från "preamble.sty" där allt är samlat
+\usepackage{init}
+\usepackage{amsmath}
+\usepackage[⟨options⟩]{fancyhdr}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
+\begin{document}
+    \selectlanguage{swedish}
+    \pagestyle{fancy}
+%... then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[RO,L]{{}}
+
+% skapar titelsidan, ligger i ett .tex dokument i mappen "titlepage". Finns flera versioner att använda sig av genom att kommentera ut/in 
+    \include{tp/tp}
+\input{atomfysik}
+\input{halvledare}
+    
+
+\end{document}

@@ -1,0 +1,58 @@
+% sätter vmargin och hmargin samt papperstypen för geometri
+\usepackage[vmargin=3cm,hmargin=2cm,a4paper]{geometry} 
+
+% För att wrappa text runt figurer
+\usepackage{wrapfig}
+
+% språk, encoding, typsnitt
+\usepackage[english, swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% För att skala typsnitt istället för \large \small etc
+\usepackage{scalefnt}
+
+% Visa kod (latex eller annan) i textformat. Hanterar allt som text
+\usepackage{verbatim}
+
+% Anpassa titlar eller subtitlar
+\usepackage{titlesec}
+
+% Box för att aligna paragrafer rätt
+\usepackage{pbox} 
+
+% Visa pdfer i dokumentet
+\usepackage{pdfpages}
+
+% Paket för att lägga till bilder
+\usepackage{graphicx}
+\usepackage{caption}
+
+% Mattepaket
+\usepackage{mathtools}
+\usepackage{amsmath}
+
+% Extra symboler
+\usepackage{gensymb}
+
+%För referenser och källhänvisning
+\usepackage[backend=biber, style = ieee]{biblatex}
+\addbibresource{refrences.bib}
+% https://www.scribbr.se
+
+% Tikz för att rita kretsscheman/diagram
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{positioning} % behövs för vissa positionsargument
+\usetikzlibrary{calc} % behövs för att beräkna tex medelavstånd mellan noder
+\tikzset{every picture/.style={line width=0.6pt}} % sätter linjebredden till 0.6pt för alla tikzfigurer
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+
+% kommand för att sätta en figurcaption till center och 70% av textbredden istället för att lägga till det manuellt
+\newcommand{\figset}{\centering\captionsetup{justification=centering,width=0.70\textwidth}}
+
+% Kommand för karaktärer i cirklar
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}

@@ -1,0 +1,87 @@
+% @Depricated - bilden är inte genomskinlig
+% logo i mitten ovanför titeln med "lunds tekniska högskola" under
+% \includegraphics[scale=0.3]{tp/lth_transparent_tekniska.png}
+% \vspace*{1cm}
+
+% logo i mitten ovanför titeln
+% \begin{tikzpicture}[remember picture,overlay]
+%     \node[anchor=north,inner sep=0pt] (logo) at (current page.north) {\includegraphics[scale=0.4]{tp/lth_transparent_notext.png}}; 
+%     % \node [below=-25pt of logo] {\textbf{text}};
+% \end{tikzpicture}
+% \vspace*{5cm}
+
+% logo i mitten ovanför titeln med "lunds universitet" under
+% \begin{tikzpicture}[remember picture,overlay]
+%     \node[anchor=north,inner sep=0pt] (logo) at (current page.north) {\includegraphics[scale=0.3]{tp/lth_transparent.png}}; 
+%     % \node [below=-25pt of logo] {\textbf{text}};
+% \end{tikzpicture}
+% \vspace*{6cm}
+
+%lth-logo i övre högra hörnet, med text under
+% \begin{tikzpicture}[remember picture,overlay]
+%     \node[anchor=north west,inner sep=0pt] (logo) at (current page.north west) {\includegraphics[scale=0.4]{tp/lth_transparent_notext.png}}; 
+%     % \node [below=-25pt of logo] {\textbf{text}};
+% \end{tikzpicture}
+% \vspace{3cm}
+
+% % lth-logo i nedre högra hörnet
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south east,inner sep=0pt] (logo) at (current page.south east) {\includegraphics[scale=0.55]{tp/lth_transparent_corner.png}}; 
+    % \node [below=-25pt of logo] {\textbf{text}};
+\end{tikzpicture}
+
+% % stil 1 av texten
+\begin{center}
+    \textbf{\huge Komponentfysik - ESSF20}
+    
+    \vspace{0.8cm}
+        
+    \vspace{0.8cm}
+
+    \vspace{0.3cm}
+    \textbf{Walter Mundt-Petersen}    \\
+    Shoutout till Rydbergssalen, mobilspel, och Khan Academy.
+    \vfill
+        
+    \vspace{0.8cm}
+    
+    
+    LTH\\
+    Lunds Universitet\\
+    Sverige\\
+    \today % skriver in dagens datum
+\end{center}
+
+
+% stil 2 av texten
+% \begin{center}
+%     \parbox{5cm}{
+%         \begin{flushleft}
+%             \huge 
+%             Labbrapport \\
+%             \vspace{0.25cm}
+%             \large 
+%             Version nr: 3 \\
+%             \vspace{0.7cm}
+%             Lab: Impedans
+%         \end{flushleft}
+%         }
+% \end{center}
+
+% \vfill
+% \begin{flushleft}
+%     \large
+%     Handledare: Elin Dahlgren \\
+%     \vspace{0.65cm}
+%     Laboration utförd datum: \today\\
+%     \vspace{0.65cm}
+%     Utförd av: Marcel Martens \& Jonathan Carlsson \\
+%     Grupp nr: 24\\
+%     \vspace{0.65cm}
+%     Granskad av: Mattias Lindskoug \& Vincent Olson \\
+%     Grupp nr: 21\\
+% \end{flushleft}
+
+% % Lägger till table of contents och rensar resten av sidan
+\break
+\clearpage
